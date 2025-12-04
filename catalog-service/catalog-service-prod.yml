@@ -1,0 +1,6 @@
+# MySQL Database Configuration
+spring.datasource.url=produrl
+spring.datasource.username=produsername
+spring.datasource.password=prodpass
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+ 
