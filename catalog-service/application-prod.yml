@@ -1,6 +1,16 @@
+
 # MySQL Database Configuration
-spring.datasource.url=produrl
-spring.datasource.username=produsername
-spring.datasource.password=prodpass
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
- 
+spring:
+  datasource:
+    url:jdbc: prod-url
+    username: prod-un
+    password: prod-pw
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
